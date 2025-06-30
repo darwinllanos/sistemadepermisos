@@ -1,3 +1,6 @@
+from django.contrib import admin
+from django.urls import path, include
+
 """
 URL configuration for app_permisos project.
 
@@ -19,4 +22,5 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api_drf/', include('api_drf.urls')),
 ]
